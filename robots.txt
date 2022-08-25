@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Sitemap: https://eevl.study/sitemap.xml
+Sitemap: https://eevl.study/sitemapimages.xml

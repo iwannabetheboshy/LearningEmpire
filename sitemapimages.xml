@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+	<url>
+		<loc>http://www.eevl.study/</loc>
+		<lastmod>2022-01-08T06:28:23+01:00</lastmod>
+		<priority>1.0</priority>
+		<image:image>
+				<image:loc>http://www.eevl.study/static/img/portfolio/audience/1.jpeg</image:loc>
+		</image:image>
+		<image:image>
+				<image:loc>http://www.eevl.study/static/img/portfolio/audience/2.jpeg</image:loc>
+		</image:image>
+		<image:image>
+				<image:loc>http://www.eevl.study/static/img/portfolio/audience/3.jpeg</image:loc>
+		</image:image>
+		<image:image>
+				<image:loc>http://www.eevl.study/static/img/portfolio/audience/4.jpeg</image:loc>
+		</image:image>
+		<image:image>
+				<image:loc>http://www.eevl.study/static/img/portfolio/audience/5.jpeg</image:loc>
+		</image:image>
+		<image:image>
+				<image:loc>http://www.eevl.study/static/img/portfolio/studies/1.jpeg</image:loc>
+		</image:image>
+		<image:image>
+				<image:loc>http://www.eevl.study/static/img/portfolio/studies/2.jpeg</image:loc>
+		</image:image>
+		<image:image>
+				<image:loc>http://www.eevl.study/static/img/portfolio/studies/3.jpeg</image:loc>
+		</image:image>
+		<image:image>
+				<image:loc>http://www.eevl.study/static/img/portfolio/studies/4.jpeg</image:loc>
+		</image:image>
+		<image:image>
+				<image:loc>http://www.eevl.study/static/img/portfolio/studies/5.jpeg</image:loc>
+		</image:image>
+		<image:image>
+				<image:loc>http://www.eevl.study/static/img/portfolio/studies/6.jpeg</image:loc>
+		</image:image>
+		<image:image>
+				<image:loc>http://www.eevl.study/static/img/portfolio/studies/7.jpeg</image:loc>
+		</image:image>
+	</url>
+</urlset>

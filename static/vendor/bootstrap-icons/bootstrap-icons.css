@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'fontemp';
+  src:  url('fonts/fontemp.eot?rta8er');
+  src:  url('fonts/fontemp.eot?rta8er#iefix') format('embedded-opentype'),
+    url('fonts/fontemp.ttf?rta8er') format('truetype'),
+    url('fonts/fontemp.woff?rta8er') format('woff'),
+    url('fonts/fontemp.svg?rta8er#fontemp') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fontemp' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cursor:before {
+  content: "\e925";
+}
+.icon-translate:before {
+  content: "\e922";
+}
+.icon-light-line:before {
+  content: "\e923";
+}
+.icon-settings-line:before {
+  content: "\e924";
+}
+.icon-arrow-right-s:before {
+  content: "\e920";
+}
+.icon-arrow-left-s:before {
+  content: "\e921";
+}
+.icon-bookmark-right:before {
+  content: "\e91e";
+}
+.icon-bookmark-left:before {
+  content: "\e91f";
+}
+.icon-arrow-down-s-line:before {
+  content: "\e91d";
+}
+.icon-plus:before {
+  content: "\e91c";
+}
+.icon-star-fill:before {
+  content: "\e915";
+}
+.icon-menu:before {
+  content: "\e916";
+}
+.icon-map-pin:before {
+  content: "\e917";
+}
+.icon-instagram:before {
+  content: "\e918";
+}
+.icon-whatsapp:before {
+  content: "\e919";
+}
+.icon-phone1:before {
+  content: "\e91a";
+}
+.icon-arrow-up:before {
+  content: "\e91b";
+}
+.icon-fire-line:before {
+  content: "\e913";
+}
+.icon-fire-fill:before {
+  content: "\e914";
+}
+.icon-geo-laur:before {
+  content: "\e90d";
+}
+.icon-cards-laur:before {
+  content: "\e90e";
+}
+.icon-fall-laur:before {
+  content: "\e90f";
+}
+.icon-person-laur:before {
+  content: "\e910";
+}
+.icon-cap-laur:before {
+  content: "\e911";
+}
+.icon-phone-laur:before {
+  content: "\e912";
+}
+.icon-fall-line:before {
+  content: "\e900";
+}
+.icon-book:before {
+  content: "\e901";
+}
+.icon-diploma:before {
+  content: "\e902";
+}
+.icon-fusion:before {
+  content: "\e903";
+}
+.icon-lang:before {
+  content: "\e904";
+}
+.icon-puzzle:before {
+  content: "\e905";
+}
+.icon-cube:before {
+  content: "\e906";
+}
+.icon-person:before {
+  content: "\e907";
+}
+.icon-phone:before {
+  content: "\e908";
+}
+.icon-cap:before {
+  content: "\e909";
+}
+.icon-geo:before {
+  content: "\e90a";
+}
+.icon-cards:before {
+  content: "\e90b";
+}
+.icon-fall-fill:before {
+  content: "\e90c";
+}

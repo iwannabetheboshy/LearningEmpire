@@ -1,0 +1,904 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Учебная Империя - образовательный центр</title>
+  <meta content="Подготовка к ОГЭ, ЕГЭ, ВПР. Профессиональные преподаватели. Мотивация и стремление к знаниям. Иностранные языки. IELTS, TOEFL, HSK. Высокие баллы на экзамене" name="description">
+  <meta content="подготовка к огэ владивосток, подготовка к егэ владивосток, репетитор математик, репетитор по русскому, дошкольное образование владивосток" name="keywords">
+  <link href="{% static 'img/favicon.ico' %}" type="image/x-icon" rel="icon">
+  <link href="{% static 'img/favicon.ico' %}" rel="apple-touch-icon">
+  <!--<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet" type="text/css" />-->
+  <link href="{% static '/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static '/css/style.css' %}" rel="stylesheet">
+  <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    
+       ym(87536519, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/87536519" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-220734388-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-220734388-1');
+    </script>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="#hero" class="logo scrollto align-items-center">
+        <img src="{% static 'img/hero-img.webp' %}" alt="">
+		<span>Учебная Империя</span>
+      </a>	  
+	  
+	  <span class="phone">
+	    <a href="tel: 89147043666" onclick="ym(87536519,'reachGoal','call');ga('send','event','call')" target="_blank">+7 (914) 704-36-66</a>
+	  </span>
+	  <span class="secret-phone">
+	    <a href="tel: 2743666" target="_blank">274-36-66</a>
+	  </span>
+
+      <nav id="navbar" class="navbar">
+	    <ul class="mask"></ul>
+        <ul>
+          <li><a class="nav-link scrollto" href="#about">О нас</a></li>
+          <li><a class="nav-link scrollto" href="#courses">Курсы</a></li>
+          <li><a class="nav-link scrollto" href="#sales">Акции</a></li>    
+		  <li><a class="nav-link scrollto" href="#portfolio">Галерея</a></li>
+		  <li><a class="nav-link scrollto" href="#mobile-portfolio">Галерея</a></li>
+		  <li><a class="nav-link scrollto" href="#reviews">Отзывы</a></li>
+		  <li><a class="nav-link scrollto" href="#pricing">Цены</a></li>
+		  <li><a class="nav-link scrollto" href="#mobile-pricing">Цены</a></li>
+		  <li><a class="nav-link scrollto" href="#contact">Контакты</a></li>      
+        </ul>
+		
+        <i class="icon icon-menu mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header><!-- End Header --> 
+  
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+	  
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up"><span>"Учебная Империя"</br></span>Репетиторы по всем школьным предметам</h1>
+		  <img src="{% static 'img/decorate/terminator.webp' %}" class="terminator" data-aos="fade-up" alt="">
+          <h2 data-aos="fade-up" data-aos-delay="100">Современный центр дополнительного образования с широкими возможностями<br><br>Мы любим свою работу, поэтому делаем ее хорошо<br><br>Готовим к ЕГЭ, ОГЭ, ВПР<br>Более 1000 выпускников получили от 80 баллов</h2>
+          <div data-aos="fade-up" data-aos-delay="200">
+            <a href="#contact" class="scrollto">
+			  <div class="feedback">
+			    <img src="{% static 'img/decorate/btn-buy.webp' %}" class="img-fluid" alt="">				
+			  </div>	              
+			</a> 
+          </div>
+        </div>
+		
+		<picture class="col-lg-6">
+		  <source srcset="{% static 'img/1x1.png' %}" media="(max-width: 768px)">
+	      <source srcset="{% static 'img/hero-img.webp' %}" width="80%" media="(max-width: 991px)">
+		  <img src="{% static 'img/hero-img.webp' %}" class="img-fluid" data-aos="zoom-out" data-aos-delay="100" alt="">
+		</picture>
+			
+      </div>
+    </div>	
+  </section><!-- End Hero -->	   
+  
+  
+  <main id="main">
+  
+  <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+		  <i class="icon icon-cap-laur"></i>
+          <h3>О Центре</h3>
+        </header>
+
+        <div class="row about-container">
+          <div class="col-lg-6">
+            <div class="icon-box" data-aos="fade-up">
+              <h4 class="title">Почему выбирают нас?</h4>
+              <i class="icon icon-settings-line"></i>
+              <p>На рынке дополнительного образования с 2013 года.</p>
+			  <p>Более 1000 м<sup>2 </sup>образовательного пространства.</p>
+			  <p>Наши преподаватели - молодые выпускники профильных ВУЗов, победители региональных олимпиад с результатами ЕГЭ выше 90 баллов.</p>
+			  <p>Программа обучения разрабатывается индивидуально и соответствует требованиям ФГОС</p>
+			</div>
+
+            <div class="icon-box" data-aos="fade-up">
+              <h4 class="title">Чему мы учим?</h4>
+              <i class="icon icon-light-line"></i>
+              <p>Более 50 кабинетов для получения знаний по дисциплинам:<br>Математика, Русский язык, Физика, Химия, Информатика, История, Обществознание, Английский язык, Биология, Литература, Алгебра, Геометрия, География</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up">
+              <h4 class="title">А как же иностранные языки :)</h4>
+              <i class="icon icon-translate"></i>
+              <p>Английский, китайский, японский, корейский и испанский языки для детей и взрослых.<br>
+			  Подготовка к ЕГЭ, ОГЭ, IELTS, TOEFL, HSK</p>
+            </div>
+          </div>	
+		  
+		  <picture class="col-lg-6 d-flex align-items-center">
+		    <source srcset="{% static 'img/1x1.png' %}" media="(max-width: 991px)">
+			<img src="{% static 'img/about.webp' %}" class="img-fluid" data-aos="fade-up" alt="">
+		  </picture>			  
+        </div>			
+      </div>				
+    </section><!-- End About Section -->
+	
+	
+	<!-- ======= Courses Section ======= -->
+    <section id="courses" class="courses">
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+		  <i class="icon icon-phone-laur"></i>
+          <h3>Наши Курсы</h3>		
+	    </header>
+
+        <div class="row">
+		  <picture class="col-lg-6 d-flex align-items-center">
+		    <source srcset="{% static 'img/1x1.png' %}" media="(max-width: 768px)">
+			<img src="{% static 'img/courses.webp' %}" class="img-fluid" data-aos="fade-up" alt="">
+		  </picture>
+			
+          <div class="col-lg-6">		  
+            <div class="accordion accordion-flush" id="faqlist1">
+              <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                  <i class="icon icon-fusion"></i>
+				  Начальные классы
+                </button>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+				    Работаем по всем основным программам:<br>Планета знаний, 21 век, Школа России, Гармония и другие. Заполняем пробелы, помогаем с ДЗ.
+				  </div>
+                </div>
+              </div>
+			
+              <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                  <i class="icon icon-book"></i>
+				  Школьная программа
+                </button>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+				    Заполним пробелы прошлых лет, подтянем успеваемость и привьем любовь к учебе.
+				  </div>
+                </div>
+              </div>
+			
+              <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                  <i class="icon icon-diploma"></i>
+				  Подготовка к ОГЭ/ЕГЭ
+                </button>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+				    В группах (до 5 человек) и индивидуально.<br>Соответствует ФГОС.<br>Усиленная подготовка (дважды в неделю по 1,5ч) для высоких результатов!
+				  </div>
+                </div>
+              </div>
+			  
+			  <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                  <i class="icon icon-cube"></i>
+				  Дошкольное образование
+                </button>
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+				    Занимаемся с детками от 3 лет.<br>Все необходимое для поступления в 1 класс: математика, чтение, письмо, окружающий мир, логика и английский.
+				  </div>
+                </div>
+              </div>
+			
+              <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                  <i class="icon icon-lang"></i>
+				  Иностранные языки
+                </button>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+				    Английский, китайский, корейский, японский.<br>Морской английский. Деловой английский.<br>Подготовка к TOEFL, IELTS; HSK.
+				  </div>
+                </div>
+              </div>
+			
+              <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-6">
+                  <i class="icon icon-puzzle"></i>
+				  Сопровождение семейного обучения
+                </button>
+                <div id="faq-content-6" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+				    Уникальная программа с личным куратором.<br>Три ступени участия.<br>Разработка календарного плана в соответствии с ФГОС.<br>Все школьные предметы.
+				  </div>
+                </div>
+              </div>	  
+            </div>			
+		  </div>		  
+		</div>
+      </div>
+    </section><!-- End Courses Section -->
+	
+	
+	<!-- ======= Prolongation Section ======= -->
+    <section id="prolongation" class="prolongation">
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+		  <i class="icon icon-phone-laur"></i>
+          <h3>Продленка</h3>
+        </header>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4">
+            <div class="box">
+			  <img src="{% static 'img/prol-1.webp' %}" class="img-fluid" alt="">
+              <h3>Игры и общение</h3>
+			  <p>Активный отдых, подвижные игры, танцы и хорошее настроение!</p>
+			  </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+			  <img src="{% static 'img/prol-2.webp' %}" class="img-fluid" alt="">
+              <h3>Развиваем ребят</h3>
+              <p>Дополнительные <span>бесплатные</span> развивающие занятия: логика, счет, развитие EQ, искусство и культура</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+			  <img src="{% static 'img/prol-3.webp' %}" class="img-fluid" alt="">
+              <h3>Делу - время, потехе - час</h3>
+			  <p>Помогаем с домашним заданием: Математика, Русский язык, Литература, Окружающий мир, Английский язык</p>
+			  </div>
+            </div>
+          </div>
+		  
+		  <div class="feedback"  data-aos="fade-up">
+	        <a href="#contact" class="scrollto">
+              <img src="{% static 'img/decorate/btn-buy.webp' %}" class="img-fluid" alt="">
+            </a>
+         </div>
+        </div>
+      </div> 
+    </section><!-- End Prolongation Section -->
+	
+	
+	<!-- ======= Sales Section ======= -->
+    <section id="sales" class="sales">
+      <div class="container" data-aos="fade-up">	  
+	    <header class="section-header">
+		  <i class="icon icon-fall-laur"></i>
+          <h3>Акции</h3>
+        </header>
+
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="sale-box">
+              <i class="icon icon-fire-fill"></i>
+              <div> 
+			    <p>Скидка 10% за несколько предметов</p>
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="col-lg-6">
+            <div class="sale-box">
+              <i class="icon icon-fire-line"></i>
+              <div>
+			    <p>Семейные скидки<br>(родитель + ребенок, 2 ребенка)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="sale-box">
+              <i class="icon icon-fire-fill"></i>
+              <div>
+			    <p>Акция «Приведи друга»<br>и получи 1 000 ₽ в подарок</p>
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="col-lg-6">
+            <div class="sale-box">
+              <i class="icon icon-fire-line"></i>
+              <div>
+			    <p>Подпишись на наш Инстаграм,<br>отметь 2 друзей и получи скидку!</p>
+              </div>
+            </div>
+          </div>		  
+        </div>
+      </div>
+    </section><!-- End Sales Section -->
+
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+          <h3>Галерея</h3>
+        </header>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Все</li>
+              <li data-filter=".filter-app">Аудитории</li>
+              <li data-filter=".filter-card">Учебный процесс</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/audience/1.webp' %}" class="img-fluid" alt="Кабинет начальных классов">
+              <div class="portfolio-info">
+                <h4>Кабинет начальных классов</h4>
+                <div class="portfolio-links">
+                  <a href="{% static 'img/portfolio/audience/1.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox"><i class="icon icon-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/audience/2.webp' %}" class="img-fluid" alt="Подготовка к школе - 1">
+              <div class="portfolio-info">
+                <h4>Занятия в игровой форме</h4>
+                <div class="portfolio-links">
+                  <a href="{% static 'img/portfolio/audience/2.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox"><i class="icon icon-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/audience/3.webp' %}" class="img-fluid" alt="Подготовка к школе - 2">
+              <div class="portfolio-info">
+                <h4>Красочное детство</h4>
+                <div class="portfolio-links">
+                  <a href="{% static 'img/portfolio/audience/3.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox"><i class="icon icon-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/audience/4.webp' %}" class="img-fluid" alt="Зона отдыха">
+              <div class="portfolio-info">
+                <h4>Приятная атмосфера</h4>
+                <div class="portfolio-links">
+                  <a href="{% static 'img/portfolio/audience/4.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox"><i class="icon icon-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/audience/5.webp' %}" class="img-fluid" alt="Комфортные кабинеты">
+              <div class="portfolio-info">
+                <h4>Комфортные кабинеты</h4>
+                <div class="portfolio-links">
+                  <a href="{% static 'img/portfolio/audience/5.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox"><i class="icon icon-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static '/img/portfolio/studies/1.webp' %}" class="img-fluid" alt="Подготовка к ЕГЭ по физике<">
+              <div class="portfolio-info">
+                <h4>Подготовка к ЕГЭ по физике</h4>
+                <div class="portfolio-links">
+                  <a href="{% static '/img/portfolio/studies/1.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox"><i class="icon icon-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static '/img/portfolio/studies/2.webp' %}" class="img-fluid" alt="Подготовка к ОГЭ по математике">
+              <div class="portfolio-info">
+                <h4>Подготовка к ОГЭ по математике</h4>
+                <div class="portfolio-links">
+                  <a href="{% static '/img/portfolio/studies/2.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox"><i class="icon icon-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static '/img/portfolio/studies/3.webp' %}" class="img-fluid" alt="Подготовка к ОГЭ по химии">
+              <div class="portfolio-info">
+                <h4>Подготовка к ОГЭ по химии</h4>
+                <div class="portfolio-links">
+                  <a href="{% static '/img/portfolio/studies/3.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox"><i class="icon icon-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static '/img/portfolio/studies/4.webp' %}" class="img-fluid" alt="Подготовка к ОГЭ по англлийскому">
+              <div class="portfolio-info">
+                <h4>Подготовка к ОГЭ по англлийскому</h4>
+                <div class="portfolio-links">
+                  <a href="{% static '/img/portfolio/studies/4.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox"><i class="icon icon-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static '/img/portfolio/studies/5.webp' %}" class="img-fluid" alt="Подготовка к ВПР по математике">
+              <div class="portfolio-info">
+                <h4>Подготовка к ВПР по математике</h4>
+                <div class="portfolio-links">
+                  <a href="{% static '/img/portfolio/studies/5.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox"><i class="icon icon-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static '/img/portfolio/studies/6.webp' %}" class="img-fluid" alt="Подготовка к ЕГЭ по математике">
+              <div class="portfolio-info">
+                <h4>Подготовка к ЕГЭ по математике</h4>
+                <div class="portfolio-links">
+                  <a href="{% static '/img/portfolio/studies/6.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox"><i class="icon icon-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static '/img/portfolio/studies/7.webp' %}" class="img-fluid" alt="ЕГЭ по математике базового уровня">
+              <div class="portfolio-info">
+                <h4>ЕГЭ по математике базового уровня</h4>
+                <div class="portfolio-links">
+                  <a href="{% static '/img/portfolio/studies/7.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox"><i class="icon icon-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+	
+	
+	 <!-- ======= Mobile Portfolio Section ======= -->
+    <section id="mobile-portfolio" class="mobile-portfolio">
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+		  <i class="icon icon-cards-laur"></i>
+          <h3>Галерея</h3>
+        </header>
+
+        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="swiper-wrapper">
+		    <div class="swiper-slide">
+              <div class="testimonial-item">
+				<a href="{% static '/img/portfolio/audience/1.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox">
+				  <img src="{% static '/img/portfolio/audience/1.webp' %}" alt="">
+				</a>			
+              </div>
+            </div>
+			
+			<div class="swiper-slide">
+              <div class="testimonial-item">
+				<a href="{% static '/img/portfolio/audience/2.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox">
+				  <img src="{% static '/img/portfolio/audience/2.webp' %}" alt="">
+				</a>			
+              </div>
+            </div>
+			
+			<div class="swiper-slide">
+              <div class="testimonial-item">
+				<a href="{% static '/img/portfolio/audience/3.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox">
+				  <img src="{% static '/img/portfolio/audience/3.webp' %}" alt="">
+				</a>			
+              </div>
+            </div>
+			
+			<div class="swiper-slide">
+              <div class="testimonial-item">
+				<a href="{% static '/img/portfolio/audience/4.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox">
+				  <img src="{% static '/img/portfolio/audience/4.webp' %}" alt="">
+				</a>			
+              </div>
+            </div>
+			
+			<div class="swiper-slide">
+              <div class="testimonial-item">
+				<a href="{% static '/img/portfolio/audience/5.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox">
+				  <img src="{% static '/img/portfolio/audience/5.webp' %}" alt="">
+				</a>			
+              </div>
+            </div>
+			
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+				<a href="{% static '/img/portfolio/studies/1.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox">
+				  <img src="{% static '/img/portfolio/studies/1.webp' %}" alt="">
+				</a>			
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+			    <a href="{% static '/img/portfolio/studies/2.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox">
+				  <img src="{% static '/img/portfolio/studies/2.webp' %}" alt="">
+				</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <a href="{% static '/img/portfolio/studies/3.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox">
+				  <img src="{% static '/img/portfolio/studies/3.webp' %}" alt="">
+				</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <a href="{% static '/img/portfolio/studies/4.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox">
+				  <img src="{% static '/img/portfolio/studies/4.webp' %}" alt="">
+				</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <a href="{% static '/img/portfolio/studies/5.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox">
+				  <img src="{% static '/img/portfolio/studies/5.webp' %}" alt="">
+				</a>
+              </div>
+            </div>
+			
+			<div class="swiper-slide">
+              <div class="testimonial-item">
+                <a href="{% static '/img/portfolio/studies/6.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox">
+				  <img src="{% static '/img/portfolio/studies/6.webp' %}" alt="">
+				</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <a href="{% static '/img/portfolio/studies/7.webp' %}" data-gallery="portfolioGallery" class="portfokio-lightbox">
+				  <img src="{% static '/img/portfolio/studies/7.webp' %}" alt="">
+				</a>
+              </div>
+            </div>		
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section><!-- End Mobile Portfolio Section -->	
+	
+
+    <!-- ======= Reviews Section ======= -->
+    <section id="reviews" class="reviews">
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+          <h3>Отзывы</h3>
+        </header>
+
+        <div class="testimonials-slider swiper-container", data-aos="fade-up" data-aos-delay="200">
+          <div class="swiper-wrapper d-flex justify-cntent-center align-items-center">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+			    <img src="{% static 'img/reviews/1.webp' %}" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+			    <img src="{% static 'img/reviews/2.webp' %}" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+			    <img src="{% static 'img/reviews/3.webp' %}" alt="">
+              </div>
+            </div>
+			
+			<div class="swiper-slide">
+              <div class="testimonial-item">
+			    <img src="{% static 'img/reviews/4.webp' %}" alt="">
+              </div>
+            </div>
+			
+			<div class="swiper-slide">
+              <div class="testimonial-item">
+			    <img src="{% static 'img/reviews/5.webp' %}" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+			    <img src="{% static 'img/reviews/6.webp' %}" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+			    <img src="{% static 'img/reviews/7.webp' %}" alt="">
+              </div>
+            </div>
+			
+			<div class="swiper-slide">
+              <div class="testimonial-item">
+			    <img src="{% static 'img/reviews/8.webp' %}" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section><!-- End Reviews Section -->
+	
+	
+	<!-- ======= Pricing Section ======= -->
+	<section id="pricing" class="pricing">  
+      <div class="container" data-aos="fade-up">	  
+	    <header class="section-header">
+          <h3>Стоимость</h3>
+        </header>
+		
+        <div class="desktop-pricing row gy-4" data-aos="fade-left">
+          <div class="col-xl-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="box">
+              <h2>Индивидуальные занятия</h2>
+              <div class="price">1500<sup> ₽</sup><span>/ 60 мин</span></div>
+              <p>
+			    Подберем учебный план под ваши цели и задачи<br><br>
+				Берем учеников любой сложности!				
+              </p>
+            </div>
+          </div>
+
+          <div class="col-xl-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="box">
+              <h2>Групповые занятия</h2>
+              <div class="price">800<sup> ₽</sup><span>/ 60 мин<pan></div>
+              <p>
+                Группы от 2 до 5 человек формируются по уровню знаний<br><br>
+				К каждому ребенку индивидуальный подход!
+              </p>
+            </div>
+          </div>
+
+          <div class="col-xl-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="box">
+			  <span class="featured">Новинка!</span>
+              <h2>Дошкольное обучение</h2>
+              <div class="price">800<sup> ₽</sup><span>(группа) / 60 мин</span></div>
+              <p>
+                Подготовка к школе по различным предметам для самых маленьких<br>от 4 лет!
+              </p>
+            </div>
+          </div>
+	    </div>
+	  </div>	  
+	</section> <!-- End Pricing Section -->
+	
+	
+	<!-- Mobile Pricing Section -->
+	<section id="mobile-pricing" class="mobile-pricing">	  
+	  <header class="section-header">
+          <h3>Стоимость</h3>
+        </header>
+	  
+      <div class="d-flex justify-cntent-center align-items-center" data-aos="fade-up">	  
+        <div id="heroCarousel" class="container carousel">
+          <div class="carousel-item active">
+            <div class="carousel-container">
+              <h2>Индивидуальные занятия</h2>
+              <div class="price">1500<sup> ₽</sup><span>/ 60 мин</span></div>
+              <p>
+			    Подберем учебный план<br>под ваши цели и задачи<br><br>
+				Берем учеников с любым уровнем подготовки!				
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-container">
+              <h2>Групповые занятия</h2>
+              <div class="price">800<sup> ₽</sup><span>/ 60 мин</span></div>
+			  <p>
+                Группы от 2 до 5 человек формируются по уровню знаний<br><br>
+				К каждому ребенку индивидуальный подход!
+              </p>
+		    </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-container">
+              <h2>Дошкольное обучение</h2>
+              <div class="price">800<sup> ₽</sup><span>(группа) / 60 мин</span></div>
+              <p>
+                Подготовка к школе по различным предметам для самых маленьких<br>от 4 лет!<br><br>
+              </p>
+            </div>
+          </div>
+
+          <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+            <span class="icon icon-arrow-left-s" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+            <span class="icon icon-arrow-right-s" aria-hidden="true"></span>
+          </a>  
+        </div>		
+      </div>  
+    </section> <!-- End Mobile Pricing Section -->
+	
+	<div class="feedback"  data-aos="fade-up">
+	  <p><sup>* </sup>Предложение не является публичной офертой</p>
+	  <a href="#contact" class="scrollto">
+        <img src="{% static 'img/decorate/btn-buy.webp' %}" style="padding-bottom:20px" class="img-fluid" alt="">
+      </a>
+    </div>
+	
+	
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+		  <i class="icon icon-geo-laur"></i>
+          <h3>Контакты</h3>
+        </header>
+		
+		<div class="row gy-4 adress">
+          <div class="col-md-4">
+            <div class="info-box">
+			  <img src="{% static 'img/decorate/geo.webp' %}" class="img-fluid" alt="">
+			  <a href="https://go.2gis.com/5x0sm" target="_blank">ул. Светланская 150 стр. 2</a>
+			  <a href="https://go.2gis.com/w7j2cs" target="_blank">пр-т 100-летия Владивостока 40а</a>
+			  <a href="">ул. Адмирала Горшкова 69 (Снеговая Падь)</a>
+			</ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-box">
+              <!--<i class="icon icon-phone1"></i>-->
+			  <img src="{% static 'img/decorate/phone.webp' %}" class="img-fluid" alt="">
+              <a href="tel: 89147043666" onclick="ym(87536519,'reachGoal','call');ga('send','event','call')" target="_blank">+7 (914) 704-36-66</a>
+			  <a href="tel: 2743636" onclick="ym(87536519,'reachGoal','call');ga('send','event','call')" target="_blank">274-36-66</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-box">
+			  <img src="{% static 'img/decorate/whatsapp.webp' %}" class="img-fluid" alt="">
+              <a href="https://wa.me/79147043666" target="_blank">+7 (914) 704-36-66</a>
+            </div>
+          </div>
+        </div>		
+		
+        <div class="row" data-aos="fade-up" data-aos-delay="100">		
+		  <div class="col-lg-3 sidebar">
+		    <img src="{% static 'img/decorate/left-side.webp' %}" class="img-fluid" alt="">
+		  </div>
+		  
+          <div class="col-lg-6">
+			<form action="" class="email-form" id="DogForm" method="POST">
+			  <h3>Оставь заявку и получи<br>1000 ₽ в подарок на первое занятие<br><br></h3>
+			  <div class="row gy-4">
+				{% if messages %}
+				  {% for message in messages %}
+				    <div class="alert alert-success">
+				      <strong>{{ message }}</strong>
+					</div>
+				  {% endfor %}
+				{% endif %}
+			    {% csrf_token %}
+				{% for field in form %}
+				  <div class="col-md-12">
+				    {{ field }}
+				  </div>
+			    {% endfor %}				
+				<div class="col-md-12">
+				  <button type="submit" onlick="ym(87536519,'reachGoal','forma');ga('send','event','forma')" class="btn btn-primary">Отправить заявку</button>
+			    </div>
+			  </div>
+			</form>			 			
+          </div>		
+		  <div class="col-lg-3 sidebar">
+		    <img src="{% static 'img/decorate/right-side.webp' %}" class="img-fluid" alt="">
+		  </div>
+        </div>
+      </div>	
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+  
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">    
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 footer-info">
+		    <h2>Учебная Империя</h2>
+			<a href="tel: 89147043666" onclick="ym(87536519,'reachGoal','call');ga('send','event','call')" target="_blank">+7 (914) 704-36-66<br></a>
+			
+			<div class="social-links mt-3">
+			  <a href="tel: 89147043666" onclick="ym(87536519,'reachGoal','call');ga('send','event','call')" target="_blank"><i class="icon icon-phone1"></i></a>
+              <a href="https://wa.me/79147043666" target="_blank"><i class="icon icon-whatsapp"></i></a>
+            </div>
+          </div>
+			  
+		  <div class="col-lg-6 adress-links">
+		    <h2>Филиалы</h2>
+			<ul>
+			  <li><a href="https://go.2gis.com/5x0sm" target="_blank">ул. Светланская 150 стр. 2<i class="icon icon-cursor"></i></a></li>
+			  <li><a href="https://go.2gis.com/w7j2cs" target="_blank">пр-т 100-летия Владивостока 40а<i class="icon icon-cursor"></i></a></li>
+			  <li><a href="">ул. Адмирала Горшкова 69 (Снеговая Падь)<i class="icon icon-cursor"></i></a></li>
+			</ul>
+		  </div>	 
+        </div>
+      </div>
+    </div>    
+  </footer><!-- End Footer -->
+  
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="icon icon-arrow-up"></i></a>
+  
+  <section id="social" class="social fixed-bottom">
+    <div class="box">
+	  <a href="tel: 89147043666" onclick="ym(87536519,'reachGoal','call');ga('send','event','call')" target="_blank"><i class="icon icon-phone1"></i></a>
+      <a href="https://wa.me/79147043666" target="_blank"><i class="icon icon-whatsapp"></i></a>
+    </div>
+  </section>
+  
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+  
+</body>
+
+</html>
